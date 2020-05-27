@@ -1,0 +1,332 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content{
+width: 90%;
+max-width: 1200px;
+overflow: hidden;
+margin: auto;
+padding: 60px;
+
+}
+header{
+  height: 40vh;
+  background-image: linear-gradient(to top, rgba(254, 173, 166, 0.4) 0%, rgba(245, 239, 239, 0.4) 100%), url(../imagenes/carros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  background-position: center;
+}
+.head{
+padding:  0;
+height: 100;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:  column;
+color: rgb(255, 255, 255);
+
+}
+.menu-navegation{
+  display: flex;
+  height: 20%;
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 6px  rgba(0, 0 , 0 ,.5);
+}
+.menu-navegation a{
+  color: white;
+  text-decoration: none;
+}
+.titulo{
+  margin-top: 30px;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+
+.redes{
+margin: 0px;
+margin-top: 50px;
+padding: 0px;
+width: 100;
+display: flex;
+align-items: right;
+justify-content: right;
+
+}
+
+.redes ul{
+  position:  relative;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+
+}
+
+.redes ul li{
+  position:  relative;
+  list-style:  none;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  transform: rotate(-30deg) skew(25deg);
+  background: #ccc;
+}
+
+.redes ul li span{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: 0.5s;
+   display: flex !important;
+align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px !important;
+}
+
+.redes ul li:hover span:nth-child(5){
+  transform: translate(40px ,-40px);
+  opacity: 1;
+}
+.redes ul li:hover span:nth-child(4){
+  transform: translate(30px ,-30px);
+  opacity: .8;
+}
+.redes ul li:hover span:nth-child(3){
+  transform: translate(20px ,-20px);
+  opacity: .6;
+}
+.redes ul li:hover span:nth-child(2){
+  transform: translate(10px ,-10px);
+  opacity: .4;
+}
+.redes ul li:hover span:nth-child(1){
+  transform: translate(0 ,0);
+  opacity: .2;
+}
+.redes ul li:hover span{
+box-shadow: -1px 1px 1px rgba(0,0,0,.1);
+}
+.redes ul li:nth-child(1) span{
+  background: #3b5999;
+}
+.redes ul li:nth-child(2) span{
+background: #55acee;
+}
+.redes ul li:nth-child(3) span{
+background: #e4405f;
+}
+
+header .menu{
+margin-top: 20px;
+}
+header .menu ul{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+header .menu ul li{
+  position: relative;
+  list-style: none;
+}
+
+header .menu ul li a{
+  position: relative;
+  margin:0 20px;
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6;
+  font-size: 1.4em;
+}
+
+body{
+  background:rgba(200,200,203,1) ;
+
+}
+.slis {
+  margin-top: 20px;
+  margin-left:50px;
+width: 90%;
+height: 60vh;
+display: flex;
+
+}
+
+ .slide{
+  border: 2px solid #000;
+  position: relative;
+  background: #0f0;
+  height: 100%;
+  flex: 1;
+  border-right: 2px solid #000;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+ .slide:last-child{
+  border-right:none;
+}
+ .slide:hover{
+  flex-grow:5;
+}
+ .slide:nth-child(1){
+background: url(../imagenes/carroa.jpg);
+background-position: center center;
+}
+ .slide:nth-child(2){
+background: url(../imagenes/aceite.jpg);
+background-position: center center;
+}
+ .slide:nth-child(3){
+background: url(../imagenes/cliente.jpg);
+background-position: center center;
+}
+ .slide:nth-child(4){
+background: url(../imagenes/expertos.jpg);
+background-position: center center;
+}
+ .slide:nth-child(5){
+background: url(../imagenes/movil.jpg);
+background-position: center center;
+}
+ .slide .content{
+  position: absolute;
+  bottom: 0;
+  margin: 40px;
+  padding: 30px;
+  background: #000;
+  color: #fff;
+  font-size: 60%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform:translateY(100px);
+}
+
+ .slide:hover .content{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transform:translateY(0);
+}
+
+.slides{
+display: flex;
+
+}
+.content-titulo-controles{
+display: flex;
+justify-content: space-between;
+align-items: end;
+}
+
+.content-titulo-controles h2{
+font-size: 30px;
+}
+
+.content-titulo-controles .indicadores button{
+  background: rgb(41, 41, 41);
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+}
+.content-titulo-controles .indicadores button:hover,
+.content-titulo-controles .indicadores button.activo{
+background: red;
+
+}
+.marcas-recomendadas{
+margin-bottom: 70px;
+}
+
+.marcas-recomendadas .content-principal{
+display: flex;
+align-items: center;
+position: relative;
+}
+
+.marcas-recomendadas .content-principal .flecha-izquierda,
+.marcas-recomendadas .content-principal .flecha-derecha{
+position: absolute;
+border: none;
+background: rgba(0,0,0,0.3);
+font-size: 40px;
+height: 50%;
+top: calc(50% - 25%);
+line-height:  40px;
+width:  50px;
+color:white;
+cursor: pointer;
+z-index: 500;
+transition: .2s ease all;
+}
+.marcas-recomendadas .content-principal .flecha-izquierda{
+  left: 0;
+}
+.marcas-recomendadas .content-principal .flecha-derecha{
+  right: 0;
+}
+
+.marcas-recomendadas .content-principal .flecha-izquierda:hover,
+.marcas-recomendadas .content-principal .flecha-derecha:hover{
+background: rgba(0,0,0,.9)
+}
+
+.marcas-recomendadas .content-carusel{
+width:  100%;
+padding: 20px 0;
+overflow: hidden;
+scroll-behavior: smooth;
+}
+
+.marcas-recomendadas .content-carusel .carusel{
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+.marcas-recomendadas .content-carusel .carusel .marca{
+min-width: 20%;
+transition: 2s ease all;
+box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
+
+.marcas-recomendadas .content-carusel .carusel .marca.hover{
+transform: scale(1.2);
+transform-origin: center;
+}
+
+.marcas-recomendadas .content-carusel .carusel .marca img{
+  width: 100%;
+  vertical-align: top;
+}
+@media (max-width: 800px) {
+.marcas-recomendadas .content-carusel{
+  overflow:visible;
+}
+.marcas-recomendadas .content-carusel .carusel{
+  display:  grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+}
+.marcas-recomendadas .indicadores,
+.marcas-recomendadas .flecha-izquierda,
+.marcas-recomendadas .flecha-derecha{
+  display: none;
+}
+ }
