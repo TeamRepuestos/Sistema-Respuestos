@@ -40,6 +40,8 @@ color: rgb(255, 255, 255);
   align-items: center;
   box-shadow: 0 0 6px  rgba(0, 0 , 0 ,.5);
 }
+
+
 .menu-navegation a{
   color: white;
   text-decoration: none;
@@ -58,7 +60,7 @@ padding: 0px;
 width: 100;
 display: flex;
 align-items: right;
-justify-content: right;
+justify-content: flex-end;
 
 }
 
@@ -210,7 +212,7 @@ background-position: center center;
   padding: 30px;
   background: #000;
   color: #fff;
-  font-size: 60%;
+  font-size: 70%;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
@@ -303,7 +305,7 @@ scroll-behavior: smooth;
 .marcas-recomendadas .content-carusel .carusel .marca{
 min-width: 20%;
 transition: 2s ease all;
-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.36);
 }
 
 .marcas-recomendadas .content-carusel .carusel .marca.hover{
@@ -314,6 +316,76 @@ transform-origin: center;
 .marcas-recomendadas .content-carusel .carusel .marca img{
   width: 100%;
   vertical-align: top;
+}
+
+footer{
+background: rgb(121, 108, 113);
+padding-bottom: 0.1px;
+}
+
+footer .content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+padding-top: 40px;
+padding-bottom: 20px;
+
+}
+
+.Contacto{
+  width: 70%;
+  color: white;
+}
+
+.Contacto h3{
+  font width: 500;
+  font-size: 15px;
+}
+
+.Contacto p {
+    font width: 500;
+    font-size: 15px;
+}
+
+.subtitulo{
+text-align: center;
+font-weight: 300;
+color: rgb(119, 106, 156);
+margin-bottom: 40px;
+font-size: 40px;
+background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.Contactenos-contenedor{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.Contactenos-contenedor img{
+  width: 50%;
+}
+.contacto{
+  width: 45%;
+  margin-bottom: 7px;
+  color:rgb(79, 105, 92);
+  font-size: 25px;
+}
+.bx{
+  width: 13%;
+  display: block;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  margin-right:10px;
+background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.acerca-content{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.acerca-content img{
+  width: 30%;
 }
 @media (max-width: 800px) {
 .marcas-recomendadas .content-carusel{
